@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mp3</title>
+    <link rel="stylesheet" href="estilo.css"/>
+    
+</head>
+<body>
+    
+    <section class= "reproductormusica">
+        
+        <audio id="cancion">
+            <source src="" type="audio/mpeg"/>
+        </audio>
+    <h1>songname</h1>
+        <br>
+        
+        <!-- Lista de canciones -->
+        <select id="canciones">
+            <option value="music/Beéle, Ovy On The Drums - Mi Refe.mp3">Beéle, Ovy On The Drums - Mi Refe</option>
+            <option value="music/Coldplay - A Sky Full Of Stars.mp3">Coldplay - A Sky Full Of Stars</option>
+            <option value="music/Coldplay - Yellow.mp3">Coldplay - Yellow</option>
+            <option value="music/Lady Gaga, Bruno Mars - Die With A Smile.mp3">Lady Gaga, Bruno Mars - Die With A Smile</option>
+            <option value="music/Pink - Just Like A Pill.mp3">Pink - Just Like A Pill</option>
+        </select>
+        
+        
+        <div class="player-container">
+            <div class="player">
+             
+        
+            <!-- Controles del reproductor -->
+            <div class="controls">
+                <button id="prev-btn"> <i class="bi bi-skip-backward-fill"></i></button>
+                <button id="play-pause-btn"><i class="bi bi-play-fill"></i></button>
+                <button id="next-btn"><i class="bi bi-skip-forward-fill"></i></button>
+            </div>
+
+                <!-- Barra de progreso -->
+                <input type="range" id="progress-bar" value="0" max="100">
+                 
+                <!-- Duración de la canción -->
+                 <div id="time-info">
+                    <span id="current-time">00:00</span> / <span id="duration">00:00</span>
+                </div>
+    
+    
+                <!-- volumen -->
+                 <p1>Volumen</p1>
+                <input type="range" id="volume-control" value="100" max="100">
+    
+            
+                <!-- Reproductor de audio -->
+                
+                <audio id="audio-player" src="music/Beéle, Ovy On The Drums - Mi Refe.mp3"></audio>
+                <audio id="audio-player" src="music/Coldplay - A Sky Full Of Stars.mp3"></audio>
+                <audio id="audio-player" src="music/Coldplay - Yellow.mp3"></audio>
+                <audio id="audio-player" src="music/Lady Gaga, Bruno Mars - Die With A Smile.mp3"></audio>
+                <audio id="audio-player" src="music/Pink - Just Like A Pill.mp3"></audio>
+            </div>
+        </div>
+
+<script src="contenido.js"></script>
+</body>
+</html>
